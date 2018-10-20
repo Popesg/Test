@@ -252,6 +252,7 @@ padding-top: 50px;
 #verticaltxt{
 	font-family: 'Encode Sans Expanded';
 	font-size: 18px;
+	transition: 0.5s;
 }
 
 #verticaltxt:hover{
@@ -266,6 +267,14 @@ padding-top: 50px;
 	-webkit-transform: scale(1.3);
 	-ms-transform: scale(1.3);
 	transform: scale(1.3);
+}
+
+.fa-arrow-circle-left{
+	padding-right: 8px;
+}
+
+.fa-arrow-circle-right{
+	padding-left: 5px;
 }
 
 </style>
@@ -361,11 +370,14 @@ function closeNav() {
 <div class="container-fluid bg-1 text-center topdiv parallax">
 
 	<div class="leftside grow animated fadeInLeft delay-3s">
-			<span onclick="openNav()"><h4 id="verticaltxt">WORKS<h4></span>
+					<span onclick="openNav()">	<i class="fas fa-arrow-circle-right fa-2x"></i>
+			<h4 id="verticaltxt">WORKS<h4></span>
+
 	</div>
 
 	<div class="rightside grow animated fadeInRight delay-3s">
 	<h4 id="verticaltxt">WORKS<h4>
+	<i class="fas fa-arrow-circle-left fa-2x"></i>
 	</div>
 
 
@@ -408,9 +420,9 @@ function closeNav() {
 </div>
 
 	<div class="logo">
-    <h3 class="animated fadeIn slower delay-2s">LACHLAN THORPE</h3>
-    <img src="img/Telescope@2x.png" alt="me" class="img-responsive img-circle animated fadeInDown slow" style="display: inline">
-    <h3 class="animated fadeIn slower delay-2s">DIGITAL DESIGNER</h3>
+    <h3 class="animated fadeIn slower delay-2s hidden-xs">LACHLAN THORPE</h3>
+    <img src="img/Telescope@2x.png" alt="me" class="img-responsive img-circle animated fadeInDown slow hidden-xs" style="display: inline">
+    <h3 class="animated fadeIn slower delay-2s hidden-xs">DIGITAL DESIGNER</h3>
 	</div>
 
 <div class="poo">
